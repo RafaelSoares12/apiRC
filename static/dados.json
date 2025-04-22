@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "nome": "Ana Clara",
+      "idade": 28,
+      "email": "ana.clara@example.com",
+      "telefone": "(11) 91234-5678",
+      "endereco": {
+        "rua": "Rua das Flores",
+        "numero": 123,
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01001-000"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Carlos",
+      "idade": 35,
+      "email": "carlos.henrique@example.com",
+      "telefone": "(21) 99876-5432",
+      "endereco": {
+        "rua": "Av. Atlântica",
+        "numero": 456,
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "22021-001"
+      }
+    }
+]

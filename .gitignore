@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cython debug symbols
+cython_debug/
+
+# Virtual environment
+venv/
+.env/
+.env.bak/
+.env.*
+
+# VSCode settings
+.vscode/
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+
+# Test output
+junit.xml
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# FastAPI + Uvicorn logs (if you use them)
+*.log
+
+# IDEs
+.idea/
+*.swp
+*.swo
+
+# Pydantic schema cache
+__pydantic_schema_cache__/
+
+# Local dev database (if any)
+*.sqlite3
+
+# MacOS
+.DS_Store
+
+# Node (if using Swagger UI customizations or frontend)
+node_modules/
+package-lock.json
+yarn.lock
