@@ -3,6 +3,8 @@ import json
 from fastapi import FastAPI
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
+from fastapi import Request
+from fastapi import HTTPException
 
 app = FastAPI()
 
@@ -44,3 +46,19 @@ def listarPessoas():
             dados = json.load(f)
         return dados
     return {"erro": "Arquivo de pessoas não encontrado"}
+
+@app.post("/soma")
+async def somar(request: Request):
+    try:
+        dados = await request.json()
+        a = dados.get("a")
+        b = dados.get("b")
+        
+        if a is None or b is None:
+            raise HTTPException(status_code=400, detail="É necessário fornecer os dois números (a e b).")
+        
+        resultado = a + b
+        return {"soma": resultado}
+    
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Erro no envio dos dados ou na soma.")
